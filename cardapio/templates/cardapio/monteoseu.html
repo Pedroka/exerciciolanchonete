@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block conteudo %}
+
+<div class="page-header">
+    <h1>Escolha os Ingredientes</h1>
+</div>
+<div class="row">
+{% for ingrediente in ingredientes %}
+<div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <a href="#">
+                <img src="{{ ingrediente.imagem.url }}" alt="Smiley face"/>
+            </a>
+            <div class="caption">
+                <h3>{{ ingrediente.ingrediente_name }}</h3>
+                <p></p>
+                <p><a href="#" class="btn btn-success" role="button">Adicionar</a> <a href="#" class="btn btn-default" role="button">Remover</a></p>
+            </div>
+        </div>
+</div>
+{% endfor %}
+
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block conteudo %}
+<div class="jumbotron page-header">
+		  <h1>O Melhor Lanche do Mundo</h1>
+		  <p>Lorem Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua</p>
+		  <p><a class="btn btn-primary">Fale Conosco!</a></p>
+</div>
+<div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <a href="#">
+                <img src="{% static 'assets/imagens/imagem1-index.jpg' %}" alt="" />
+            </a>
+        </div>
+</div>
+<div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <a href="#">
+                <img src="{% static 'assets/imagens/imagem2-index.jpg' %}" alt="" />
+            </a>
+        </div>
+</div>
+
+<div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <a href="#">
+                <img src="{% static 'assets/imagens/imagem3-index.jpg' %}" alt="" />
+            </a>
+        </div>
+</div>
+{% endblock %}
